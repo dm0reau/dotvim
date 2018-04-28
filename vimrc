@@ -1,9 +1,7 @@
 " Désactive la compatibilité avec l'ancien éditeur vi
 set nocompatible
 
-" Exécution de Pathogen
-" execute pathogen#infect()
-
+" Exécution de vim-plug
 call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
