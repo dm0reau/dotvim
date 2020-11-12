@@ -29,7 +29,7 @@ set ruler
 " Largeur maxi du texte inséré
 " '80' permet de wrapper automatiquement à 80 caractères
 " '0' désactive la fonction
-set textwidth=0
+set textwidth=80
 
 " Nombre de colonnes (inutile, voire gênant)
 "set columns=80
@@ -92,7 +92,7 @@ set hlsearch
 set number
 
 " Pour l'utilisation de la souris dans un terminal (à utiliser avec GPM)
-" set mouse=a
+"set mouse=a
 
 " Activation des plugins
 filetype plugin indent on
