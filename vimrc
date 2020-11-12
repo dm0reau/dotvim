@@ -11,12 +11,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
-Plug 'jwalton512/vim-blade', { 'for': 'php' }
-Plug 'lvht/phpcd.vim', { 'for': 'php'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
