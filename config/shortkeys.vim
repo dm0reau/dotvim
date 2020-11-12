@@ -32,3 +32,14 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 " Map de ESC sur jj
 inoremap jj <ESC>
+
+" Correctif pour ouvrir des liens avec gx (https://github.com/vim/vim/issues/4738)
+function! OpenURLUnderCursor()
+  let s:uri = matchstr(getline('.'), '[a-z]*:\/\/[^ >,;()]*')
+  let s:uri = shellescape(s:uri, 1)
+  if s:uri != ''
+    silent exec "!xdg-open '".s:uri."';sleep 1"
+    :redraw!
+  endif
+endfunction
+nnoremap gx :call OpenURLUnderCursor()<CR>
